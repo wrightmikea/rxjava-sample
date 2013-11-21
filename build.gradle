@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'rxjava-sample'
+version = '0.0.1-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+
+mainClassName = 'foo.Main'
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.netflix.rxjava', name: 'rxjava-core', version:'0.8.0'
+}
